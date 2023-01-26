@@ -1,0 +1,113 @@
+body {
+    height: 100vh;
+    background: linear-gradient(5deg, rgb(1, 0, 14) 0%, rgb(1, 1, 57) 55%, rgb(3, 16, 112) 100%);
+    overflow: hidden;
+    filter: drop-shadow(0 0 10px white);
+}
+
+/* CSS for message box */
+.message-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 440px;
+    background-color: #ED6E00;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Helvetica;
+    border-radius: 10px;
+    border-color: #ffffff;
+    border-style: solid;
+}
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    transform: scale(1);
+    animation: pulse 7s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+
+    48% {
+        transform: translate(-50%, -50%) scale(1.5) rotate(360deg);
+    }
+
+    96% {
+        transform: translate(-50%, -50%) scale(1) rotate(720deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1) rotate(720deg);
+    }
+}
+
+.pulse {
+    animation-name: pulse;
+}
+
+/* CSS for text */
+.message-box p {
+    margin: 0;
+}
+
+.container {
+    width: 200px;
+    height: 100px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.center-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    padding: 0.5em;
+    text-align: center;
+}
+
+input[type="number"] {
+    padding: 0.5em;
+    margin: 0.5em;
+    font-size: 1em;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.material-design-btn {
+    background-color: #3f51b5;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.material-design-btn:hover {
+    background-color: #303f9f;
+}
+
+#data-container {
+    margin: 1em;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    white-space: pre-wrap;
+}
